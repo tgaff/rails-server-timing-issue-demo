@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Issue:
 
-Things you may want to cover:
+Reported server timing data for partials appears to be inaccurate.  When nested partials are used, the reported data shows the partials taking more time to render than **the request in total**.  Stopwatch verification confirms timing in chrome & firefox.  
 
-* Ruby version
+Noted in FF, Chrome and Safari.
 
-* System dependencies
 
-* Configuration
+### Viewing reported server timings
 
-* Database creation
+1. open network tab
+2. refresh page
+3. click into the request for the page (probably localhost:3000)
+4. click timings
+5. server timings are at the bottom
 
-* Database initialization
+See also: https://github.com/rails/rails/pull/36289
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### using the executable test case
 
-* Deployment instructions
 
-* ...
+```sh
+cd executable_test_case
+ruby test.rb
+```
+
+Observe 1 failed test.

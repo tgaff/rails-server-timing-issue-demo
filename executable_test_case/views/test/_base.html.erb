@@ -1,0 +1,11 @@
+<p>Base</p>
+
+<div>
+  <% 10.times do %>
+    <% if @nesting %>
+      <%= render partial: 'nested' %>
+    <% else %>
+      <span>not nesting</span>
+    <% end %>
+  <% end %>
+</div>

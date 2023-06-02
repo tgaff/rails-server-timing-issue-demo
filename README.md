@@ -1,5 +1,6 @@
 # README
 
+This is a repo for reproduction of issue reported here: https://github.com/rails/rails/issues/48375
 ### Issue:
 
 Reported server timing data for partials appears to be inaccurate.  When nested partials are used, the reported data shows the partials taking more time to render than **the request in total**.  Stopwatch verification confirms timing in chrome & firefox.

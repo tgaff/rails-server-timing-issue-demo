@@ -1,0 +1,8 @@
+<h1>Issue reproduction</h1>
+<p>specify query param "no_nesting" for a non-nested version without this issue</p>
+
+<p>Total iterations = <%= number_with_delimiter @total_iterations %></p>
+
+<% @primary_iterations.times do %>
+  <%= render partial: 'base_partial' %>
+<% end %>

@@ -10,8 +10,8 @@ gemfile(true) do
   # gem "rails", github: "rails/rails", branch: "main"
   gem "rails", '=7.0.4.3'
   gem "rack", "~> 2.0"
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem "pry"
+  # gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  # gem "pry"
 end
 
 require "action_controller/railtie"

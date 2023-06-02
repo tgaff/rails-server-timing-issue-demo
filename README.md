@@ -2,7 +2,7 @@
 
 ### Issue:
 
-Reported server timing data for partials appears to be inaccurate.  When nested partials are used, the reported data shows the partials taking more time to render than **the request in total**.  Stopwatch verification confirms timing in chrome & firefox.  
+Reported server timing data for partials appears to be inaccurate.  When nested partials are used, the reported data shows the partials taking more time to render than **the request in total**.  Stopwatch verification confirms timing in chrome & firefox.
 
 Noted in FF, Chrome and Safari.
 
@@ -14,6 +14,7 @@ Noted in FF, Chrome and Safari.
 3. click into the request for the page (probably localhost:3000)
 4. click timings
 5. server timings are at the bottom
+6. look for the key `render_partial.action_view`
 
 See also: https://github.com/rails/rails/pull/36289
 

@@ -7,8 +7,8 @@ gemfile(true) do
 
   git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-  # gem "rails", github: "rails/rails", branch: "main"
-  gem "rails", '=7.0.4.3'
+  gem "rails", github: "rails/rails", branch: "main"
+  # gem "rails", '=7.0.4.3'
   gem "rack", "~> 2.0"
   # gem "debug", platforms: %i[ mri mingw x64_mingw ]
   # gem "pry"
